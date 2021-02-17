@@ -1,0 +1,19 @@
+programa {
+	funcao inicio() {
+	    
+	    inteiro insert = 0
+	
+        escreva("Digite um número: ")
+        leia(insert)
+		
+		para (inteiro c = 1 ; c <= insert ; c++){
+		    escreva(c , ", ")
+		}
+		
+		escreva("\n\n\n")
+		
+		para (inteiro d = insert ; d >= 1 ; d--){
+		    escreva(d , ", ")
+		}
+	}
+}
