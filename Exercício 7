@@ -1,0 +1,17 @@
+programa {
+	funcao inicio() {
+		
+		real nota
+		
+		escreva("Insira uma nota entre zero e dez: ")
+		leia(nota)
+		
+		enquanto (nota < 0 ou nota > 10){
+		    escreva("Valor inválido.")
+		    escreva("\n\nInsira uma nota ENTRE ZERO E DEZ: ")
+	    	leia(nota)
+		}
+
+        escreva("Valor aceito.")
+	}
+}
