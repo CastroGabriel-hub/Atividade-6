@@ -1,0 +1,18 @@
+programa {
+	funcao inicio() {
+		inteiro insert_zero, insert_um
+		
+		escreva("Digite um número: ")
+		leia(insert_zero)
+		escreva("digite outro número: ")
+		leia(insert_um)
+		
+		enquanto(insert_zero < insert_um){
+		    escreva(insert_zero++, ", ")
+		}
+		enquanto(insert_zero > insert_um){
+		    escreva(insert_um++, ", ")
+		}
+
+	}
+}
