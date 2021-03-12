@@ -1,0 +1,19 @@
+programa {
+	funcao inicio() {
+		
+    	inteiro A = 80000 
+        inteiro	B = 200000	
+		inteiro anos = 0 // "ponto zero"
+		
+		enquanto(A < B){
+		    A = A + (A * 0.03)
+        	B = B + (B * 0.015)	
+        	anos++
+		}
+		
+		escreva("São " , A , " os habitantes do país A. \n")
+		escreva("São " , B , " os habitantes do país B \n")
+		escreva("Para que A ultrapassasse B, foram necessarios " , anos, " anos.")
+		
+	}
+}
