@@ -1,0 +1,23 @@
+programa {
+	funcao inicio() {
+		real um, dois, tres, quatro, cinco
+		real soma, media
+		
+		escreva("Digite um número: \n")
+		leia(um)
+		escreva("Digite um segundo número: \n")
+		leia(dois)
+		escreva("Digite um terceiro número: \n")
+		leia(tres)
+		escreva("Digite um quarto número: \n")
+		leia(quatro)
+		escreva("Digite um quinto número: \n")
+		leia(cinco)
+		
+		soma = um + dois + tres + quatro + cinco
+		media = soma / 5
+		
+		escreva(soma, " é a soma entre estes valores. \n")
+		escreva("E a média entre os números é: " , media)
+	}
+}
