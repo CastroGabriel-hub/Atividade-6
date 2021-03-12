@@ -1,0 +1,48 @@
+programa {
+	
+	inclua biblioteca Texto --> t
+	
+	funcao inicio() {
+		//NOME
+		
+		cadeia nome
+		
+		escreva("Escreva um nome: ")
+		leia(nome)
+		
+		inteiro numeroDeLetras = t.numero_caracteres(nome)
+		
+		enquanto(numeroDeLetras < 3){
+		    escreva("Nome inválido! Insira um nome com mais de três caracteres: ")
+	        leia(nome)
+	        numeroDeLetras = t.numero_caracteres(nome)
+		}
+		
+		escreva("Nome aceito.")
+		
+		//IDADE
+		
+		inteiro idade
+		escreva("\nInforme sua idade: ")
+		leia(idade)
+		enquanto(idade < 0 ou idade > 150){
+		    escreva("Idade inválida!\nPor favor, insira uma idade real: ")
+		    leia(idade)
+		}
+		escreva("Idade válida.")
+	
+		//SALÁRIO
+		
+		real salario
+		
+		escreva("\nQual é o valor do seu salário? ")
+		leia(salario)
+		
+		enquanto(salario < 0){
+		    escreva("Valor inválido. \nFavior informar um valor maior que zero: ")
+		    leia(salario)
+		}
+		
+		escreva("Valor válido!")
+	}
+}
