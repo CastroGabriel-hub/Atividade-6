@@ -1,0 +1,50 @@
+programa {
+	funcao inicio() {
+		
+    	inteiro A = 0 
+        inteiro	B = 0	
+		inteiro anos = 0 // "ponto zero"
+		
+		//Validando o numero de habitantes
+		
+		escreva("Qual a população do país A? \n")
+		leia(A)
+		escreva("Qual a população do país B? \n")
+		leia(B)
+		
+		enquanto(A < 0 ou B < 0){
+		    escreva("Informe valores válidos para o país A: \n")
+		    leia(A)
+		    escreva("Informe valores válidos para o país B: \n")
+		    leia(B)
+		}
+		
+	    //Validando a taxa de crescimento
+	    
+	    real taxaA = 0
+	    real taxaB = 0
+	    
+	    escreva("Qual a taxa de crescimento do país A? \nInforme valores no formato 0.03 ; 0.015 ; 0.027... ")
+	    leia(taxaA)
+	    escreva("E a taxa de B? \n")
+	    leia(taxaB)
+	    
+	    enquanto(taxaA < 0 ou taxaB < 0){
+		    escreva("Informe valores válidos para o país A: \n")
+		    leia(taxaA)
+		    escreva("Informe valores válidos para o país B: \n")
+		    leia(taxaB)
+		}
+	
+		enquanto(A < B){
+		    A = A + (A * taxaA)
+        	B = B + (B * taxaB)	
+        	anos++
+		}
+		
+		escreva("São " , A , " os habitantes do país A. \n")
+		escreva("São " , B , " os habitantes do país B \n")
+		escreva("Para que A ultrapassasse B, foram necessarios " , anos, " anos.")
+		
+	}
+}	
