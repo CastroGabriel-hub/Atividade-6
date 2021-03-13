@@ -1,0 +1,21 @@
+programa {
+	funcao inicio() {
+		
+		inteiro base
+		inteiro expo
+		inteiro produto = 1
+		
+		escreva("Insira um número base: ")
+		leia(base)
+		
+		escreva("Insira um expoente para esta base: ")
+		leia(expo)
+		
+		para(inteiro n = 1 ; n <= expo ; n++){
+		    produto = produto * base
+        } 
+        
+        escreva(base, " elevado à ", expo, " = ", produto)
+        
+	}
+}
