@@ -1,0 +1,21 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro n, f = 1
+
+		escreva("Insira um número: ")
+        leia(n) 
+        
+		para(inteiro i=n; i >= 1; i--){ 
+			
+			f = f * i
+			
+			escreva(i," x ")
+		}
+
+		escreva(" = ", f)
+		
+	}
+}
