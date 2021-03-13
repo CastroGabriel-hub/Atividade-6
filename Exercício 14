@@ -1,0 +1,27 @@
+programa {
+	funcao inicio() {
+		
+		inteiro input = 0
+		escreva("Insira um número entre 1 e 10: ")
+		leia(input)
+		
+		se(input > 0 e input <= 10){
+		       
+		    escreva(input, " x 1 = ", input * 1)
+		    escreva("\n", input, "x2 = ", input * 2)
+		    escreva("\n", input, "x3 = ", input * 3)
+		    escreva("\n", input, "x4 = ", input * 4)
+		    escreva("\n", input, "x5 = ", input * 5)
+		    escreva("\n", input, "x6 = ", input * 6)
+		    escreva("\n", input, "x7 = ", input * 7)
+		    escreva("\n", input, "x8 = ", input * 8)
+		    escreva("\n", input, "x9 = ", input * 9)
+		    escreva("\n", input, "x10 = ", input * 10)
+		}
+		
+		senao{
+		    escreva("Valor inválido!")
+		}
+	
+	}
+}
