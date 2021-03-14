@@ -1,0 +1,43 @@
+programa{
+	funcao inicio()
+	{
+		inteiro contador, menor = 0, maior = 0, soma = 0, input
+		
+		escreva("Quantos números serão? ")
+		leia(contador)
+
+		para(inteiro i = 1 ; i <= contador ; i++) { 
+
+			escreva("informe o número: ")
+			leia(input)
+				
+			enquanto(input < 0 ou input > 1000) {
+
+				escreva("numero inválido. Informe outro número: ")
+				leia(input)			
+			} 
+
+			//primeira rodada
+    	    se(i == 1){
+                menor = input
+    	        maior = input
+    		}
+    		    
+    		//a partir da segunda rodada (guardando os valores informados em outras variáveis)
+    		se(input < menor){
+               menor = input
+    		}
+    		    
+            se(input > maior){
+                maior = input
+            }
+                
+                soma = soma + input		    
+    	}
+    		
+    		escreva("\n O maior destes valores é: " , maior)
+    		escreva("\n O menor dentre estes valores: " , menor)
+    		escreva("\n A soma de todos os valores digitados é: ", soma)
+
+	}
+}
