@@ -1,0 +1,18 @@
+programa {
+	funcao inicio() {
+		inteiro  auxiliar = 0, antecessor = 0, x = 1, i
+	
+	    escreva(auxiliar, ", ")
+    	
+    	enquanto(x < 500){
+            escreva(x, ", ")
+        		   
+    	    auxiliar = 0 + x
+    	    x = x + antecessor
+            antecessor = auxiliar
+        		    
+    	}
+        
+        escreva(x)
+	}
+}
