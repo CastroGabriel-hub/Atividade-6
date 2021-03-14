@@ -1,0 +1,25 @@
+programa {
+	funcao inicio() {
+		
+		inteiro maior = 0, input = 0
+
+		para(inteiro i = 1 ; i <= 5 ; i++){
+
+            escreva("\n Informe um valor: ")
+            leia(input)
+		    
+		    //primeira rodada
+		    se(i == 1){ 
+		        maior = input
+		    }
+		    //vai gardando o maior valor em uma variável própria
+            se(input > maior){
+                maior = input
+            }
+	    
+		}
+		
+		escreva("\n O maior destes valores é: " , maior)
+
+	}
+}
