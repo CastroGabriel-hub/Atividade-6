@@ -1,0 +1,23 @@
+programa {
+	funcao inicio() {
+		
+		inteiro par = 0, impar = 0, input
+		
+		para(inteiro i = 0 ; i < 10; i++){
+		    
+		    escreva("Digite um número: ")
+		    leia(input)
+		    
+		    se(input % 2 == 0){
+		        par++
+		    }
+		    
+		    senao{
+		        impar++
+		    }
+		}
+		
+		escreva(par, " números pares encontrados.\n")
+		escreva(impar, " números impares encontrados.")
+	}
+}
